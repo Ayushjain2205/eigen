@@ -1,6 +1,15 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import { useAccount, useConnect, useEnsName } from "wagmi";
+import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 
 const Navbar = () => {
+  const { address, isConnected } = useAccount();
+  const { connect } = useConnect({
+    connector: new MetaMaskConnector(),
+  });
+
   return (
     <div className="navbar bg-base-100 h-[88px] padding-auto px-[40px]">
       <div className="navbar-start">
@@ -19,7 +28,13 @@ const Navbar = () => {
           className="rounded-full border-black border-[2px]"
           alt=""
         />
-        <span className="tect-[16px]">Address</span>
+        <span className="text-[16px]">
+          {isConnected ? (
+            address.slice(0, 6) + "..." + address.slice(-4)
+          ) : (
+            <button onClick={() => connect()}>Connect Wallet</button>
+          )}
+        </span>
       </div>
     </div>
   );
