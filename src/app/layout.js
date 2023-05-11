@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
 import { WagmiProvider } from "@/Components/WagmiProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = DM_Sans({ weight: ["500", "400", "700"], subsets: ["latin"] });
 
 export const metadata = {
   title: "Eigen",

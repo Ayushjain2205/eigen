@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <img
           src="/address.svg"
-          className="rounded-full border-black border-[2px]"
+          className="rounded-full border-black border-[1px] mx-[10px]"
           alt=""
         />
         <span className="text-[16px]">
