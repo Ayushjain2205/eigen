@@ -1,11 +1,12 @@
 import React from "react";
+import Layout from "@/Components/Layout";
 
 const page = () => {
   return (
-    <div>
+    <Layout>
       This is dashboard
       <button className="btn btn-primary">Test button</button>
-    </div>
+    </Layout>
   );
 };
 
