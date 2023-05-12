@@ -2,8 +2,10 @@
 import React from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 
+import CollectionDetails from "./CollectionDetails";
+
 const TabsHolder = () => (
-  <Tabs.Root className="flex flex-col w-[1214px]" defaultValue="tab1">
+  <Tabs.Root className="flex flex-col w-[1214px] mb-[50px]" defaultValue="tab1">
     <Tabs.List
       className="shrink-0 flex border-b border-black border-[2px] rounded-tl-md rounded-tr-md"
       aria-label="Manage your account"
@@ -34,16 +36,10 @@ const TabsHolder = () => (
       </Tabs.Trigger>
     </Tabs.List>
     <Tabs.Content
-      className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
+      className="grow px-[42px] bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
       value="tab1"
     >
-      <h1>Collection Details</h1>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
+      <CollectionDetails />
     </Tabs.Content>
     <Tabs.Content
       className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
