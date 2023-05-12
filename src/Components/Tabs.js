@@ -3,6 +3,7 @@ import React from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 
 import CollectionDetails from "./CollectionDetails";
+import DAOperformance from "./Tabs/DAOperformance";
 
 const TabsHolder = () => (
   <Tabs.Root className="flex flex-col w-[1214px] mb-[50px]" defaultValue="tab1">
@@ -45,49 +46,13 @@ const TabsHolder = () => (
       className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
       value="tab2"
     >
-      <h1>Members</h1>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
+      <DAOperformance />
     </Tabs.Content>
     <Tabs.Content
       className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
       value="tab3"
     >
-      <h1>DAO Performance</h1>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
+      <DAOperformance />
     </Tabs.Content>
     <Tabs.Content
       className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
