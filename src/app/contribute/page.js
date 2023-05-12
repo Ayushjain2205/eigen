@@ -11,6 +11,7 @@ const page = () => {
         <BoxHeader title="Upload your contribution">
           <FileUpload />
         </BoxHeader>
+        <progress className="progress w-[1214px] hidden"></progress>
       </div>
     </Layout>
   );
