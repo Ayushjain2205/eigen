@@ -2,7 +2,7 @@
 import React from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 
-import CollectionDetails from "./CollectionDetails";
+import CollectionDetails from "./Tabs/CollectionDetails";
 import DAOperformance from "./Tabs/DAOperformance";
 
 const TabsHolder = () => (
