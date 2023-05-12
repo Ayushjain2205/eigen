@@ -2,12 +2,15 @@
 import React from "react";
 import Layout from "@/Components/Layout";
 import FileUpload from "@/Components/FileUpload";
+import BoxHeader from "@/Components/UI/BoxHeader";
 
 const page = () => {
   return (
     <Layout>
       <div className="flex flex-col items-center mt-[40px] gap-[20px] justify-center">
-        <FileUpload />
+        <BoxHeader title="Upload your contribution">
+          <FileUpload />
+        </BoxHeader>
       </div>
     </Layout>
   );
