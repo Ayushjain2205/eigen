@@ -10,3 +10,13 @@
   .ant-upload.ant-upload-select:not(.ant-upload-disabled):hover {
   border-color: #262626 !important;
 }
+
+.avatar-uploader.ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload.ant-upload-select,
+:where(
+    .css-dev-only-do-not-override-ed5zg0
+  ).ant-upload-wrapper.ant-upload-picture-circle-wrapper
+  .ant-upload.ant-upload-select {
+  width: 350px !important;
+  height: 257px !important;
+}
