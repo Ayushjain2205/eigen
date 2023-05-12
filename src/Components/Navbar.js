@@ -23,7 +23,7 @@ const Navbar = () => {
         <img src="/eigen-logo.svg" className="h-[37px] w-[36px]" alt="" />
       </div>
       <div className="navbar-center">
-        <div className="flex flex-row gap-[32px] text-[20px]">
+        <div className="flex flex-row gap-[48px] text-[20px]">
           <span
             className={`text-${
               active === "/dashboard" ? "gray-500 font-bold" : "base-500"
@@ -31,8 +31,8 @@ const Navbar = () => {
           >
             EXPLORE
           </span>
-          <span className=" ">MY DAOs</span>
-          <span className="">MY CONTRIBUTIONS</span>
+          <span className=" ">CREATE A DAO</span>
+          <span className="">GENERATE</span>
         </div>
       </div>
       <div className="navbar-end">
