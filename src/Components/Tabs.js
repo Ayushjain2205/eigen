@@ -4,6 +4,7 @@ import * as Tabs from "@radix-ui/react-tabs";
 
 import CollectionDetails from "./Tabs/CollectionDetails";
 import DAOperformance from "./Tabs/DAOperformance";
+import Members from "./Tabs/Members";
 
 const TabsHolder = () => (
   <Tabs.Root className="flex flex-col w-[1214px] mb-[50px]" defaultValue="tab1">
@@ -46,7 +47,7 @@ const TabsHolder = () => (
       className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
       value="tab2"
     >
-      <DAOperformance />
+      <Members />
     </Tabs.Content>
     <Tabs.Content
       className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
