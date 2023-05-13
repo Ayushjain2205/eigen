@@ -14,7 +14,7 @@ const page = () => {
             id="slide1"
             className="carousel-item relative w-full justify-center"
           >
-            <ExploreCard />
+            <ExploreCard index={0} />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" className="btn btn-circle">
                 ❮
@@ -28,7 +28,7 @@ const page = () => {
             id="slide2"
             className="carousel-item relative w-full justify-center"
           >
-            <ExploreCard />
+            <ExploreCard index={1} />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" className="btn btn-circle">
                 ❮
@@ -42,7 +42,7 @@ const page = () => {
             id="slide3"
             className="carousel-item relative w-full justify-center"
           >
-            <ExploreCard />
+            <ExploreCard index={2} />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" className="btn btn-circle">
                 ❮
