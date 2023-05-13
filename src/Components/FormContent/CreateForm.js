@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import AvatarUpload from "../AvatarUpload";
+import Link from "next/link";
 
 const CreateForm = () => {
   return (
@@ -116,9 +117,11 @@ const CreateForm = () => {
         </div>
 
         <div className="flex flex-row justify-center">
-          <button className="rounded-[6px] text-[#262626] text-[18px] w-[309px] h-[40px] bg-[#D8FEE4] border-0">
-            Done
-          </button>
+          <Link href="/bounty">
+            <button className="rounded-[6px] text-[#262626] text-[18px] w-[309px] h-[40px] bg-[#D8FEE4] border-0">
+              Done
+            </button>
+          </Link>
         </div>
       </div>
     </div>
