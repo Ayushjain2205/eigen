@@ -1,7 +1,19 @@
+"use client";
 import React from "react";
 import Layout from "@/Components/Layout";
+import { useSendTransaction, usePrepareSendTransaction } from "wagmi";
+import { verifyMessage } from "ethers/lib/utils";
+import { utils } from "ethers";
+import { useRouter } from "next/navigation";
 
 const page = () => {
+  const router = useRouter();
+
+  const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
+    to: "moxey.eth",
+    value: utils.parseEther("0.03"),
+  });
+
   return (
     <Layout>
       <div className="flex flex-col items-center mt-[40px] gap-[40px] justify-center mb-[60px]">
@@ -26,7 +38,17 @@ const page = () => {
             <span className="italic text-[20px] text-black text-opacity-40 mt-[30px]">
               Do you want to use this model?
             </span>
-            <button className="rounded-[6px] text-[#262626] text-[16px] w-[390px] h-[40px] bg-[#D8FEE4] border-0">
+            <button
+              // onClick={() => sendTransaction()}
+              onClick={() => {
+                sendTransaction();
+                const timer = setTimeout(() => {
+                  router.push("/output");
+                }, 5000);
+                return () => clearTimeout(timer);
+              }}
+              className="rounded-[6px] text-[#262626] text-[16px] w-[390px] h-[40px] bg-[#D8FEE4] border-0"
+            >
               Confirm and pay (0.3 BNB)
             </button>
           </div>
