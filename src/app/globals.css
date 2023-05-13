@@ -20,3 +20,13 @@
   width: 350px !important;
   height: 257px !important;
 }
+
+.avatar-uploader.bounty-uploader.ant-upload-wrapper.ant-upload-picture-card-wrapper
+  .ant-upload.ant-upload-select,
+:where(
+    .css-dev-only-do-not-override-ed5zg0
+  ).ant-upload-wrapper.ant-upload-picture-circle-wrapper
+  .ant-upload.ant-upload-select {
+  width: 235px !important;
+  height: 207px !important;
+}
