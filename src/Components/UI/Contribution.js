@@ -62,12 +62,9 @@ const Contribution = ({ img, address }) => {
             {(isFlagged ? "Flagged" : "UnFlagged") + " Successfully!"}
           </Toast.Title>
           <Toast.Description asChild>
-            <time
-              className="[grid-area:_description] m-0 text-slate11 text-[13px] leading-[1.3]"
-              dateTime={eventDateRef.current.toISOString()}
-            >
-              {prettyDate(eventDateRef.current)}
-            </time>
+            <span>
+              Contributor : {address.slice(0, 6) + "..." + address.slice(-4)}
+            </span>
           </Toast.Description>
           <Toast.Action
             className="[grid-area:_action]"
