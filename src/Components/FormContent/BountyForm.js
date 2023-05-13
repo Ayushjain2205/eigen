@@ -14,7 +14,7 @@ const BountyForm = () => {
           <div className="flex flex-col gap-[25px]">
             <div className="flex flex-row">
               <div className="flex flex-col gap-[8px]">
-                <span className="italic text-[#262626] text-opacity-40 text-[24px]">
+                <span className=" text-[#262626] text-opacity-40 text-[24px]">
                   What are you collecting?
                 </span>
                 <textarea
@@ -26,7 +26,7 @@ const BountyForm = () => {
             </div>
             <div className="flex flex-row">
               <div className="flex flex-col gap-[8px]">
-                <span className="italic text-[#262626] text-opacity-40 text-[24px]">
+                <span className=" text-[#262626] text-opacity-40 text-[24px]">
                   Number of target images
                 </span>
                 <InputNumber
@@ -40,7 +40,7 @@ const BountyForm = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <span className="italic text-[#262626] text-opacity-40 text-[24px] mb-[8px]">
+            <span className=" text-[#262626] text-opacity-40 text-[24px] mb-[8px]">
               Add reference images
             </span>
             <BountyUpload />
@@ -48,7 +48,7 @@ const BountyForm = () => {
         </div>
 
         <div className="flex flex-col">
-          <span className="italic text-[#262626] text-opacity-40 text-[24px] mb-[32px]">
+          <span className=" text-[#262626] text-opacity-40 text-[24px] mb-[32px]">
             Bounty
           </span>
           <div className="flex flex-row gap-[34px]">

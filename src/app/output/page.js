@@ -14,11 +14,16 @@ const page = () => {
             <span className="italic text-[#262626] text-opacity-40 text-[24px]">
               Enter Prompt here
             </span>
-            <input
-              type="text"
-              placeholder=""
-              className="input input-bordered w-[1140px] h-[40px]"
-            />
+            <div className="flex flex-row gap-[16px]">
+              <input
+                type="text"
+                placeholder=""
+                className="input input-bordered w-[913px] h-[60px] focus:outline-none"
+              />
+              <button className="rounded-[6px] text-[#262626] text-[18px] w-[223px] h-[60px] bg-[#FEC7C7] border-0">
+                Done
+              </button>
+            </div>
           </div>
         </div>
       </div>

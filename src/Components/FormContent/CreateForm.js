@@ -14,7 +14,7 @@ const CreateForm = () => {
           <div className="flex flex-col gap-[25px]">
             <div className="flex flex-row">
               <div className="flex flex-col gap-[8px]">
-                <span className="italic text-[#262626] text-opacity-40 text-[24px]">
+                <span className=" text-[#262626] text-opacity-40 text-[24px]">
                   Name
                 </span>
                 <input
@@ -26,7 +26,7 @@ const CreateForm = () => {
             </div>
             <div className="flex flex-row">
               <div className="flex flex-col gap-[8px]">
-                <span className="italic text-[#262626] text-opacity-40 text-[24px]">
+                <span className=" text-[#262626] text-opacity-40 text-[24px]">
                   Description
                 </span>
                 <textarea
@@ -42,7 +42,7 @@ const CreateForm = () => {
         <div className="flex flex-row gap-[34px]">
           <div className="flex flex-row">
             <div className="flex flex-col gap-[8px]">
-              <span className="italic text-[#262626] text-opacity-40 text-[24px]">
+              <span className=" text-[#262626] text-opacity-40 text-[24px]">
                 Token Symbol
               </span>
               <input
@@ -54,7 +54,7 @@ const CreateForm = () => {
           </div>
           <div className="flex flex-row">
             <div className="flex flex-col gap-[8px]">
-              <span className="italic text-[#262626] text-opacity-40 text-[24px]">
+              <span className=" text-[#262626] text-opacity-40 text-[24px]">
                 Token Supply
               </span>
               <input
@@ -67,7 +67,7 @@ const CreateForm = () => {
         </div>
 
         <div className="flex flex-col">
-          <span className="italic text-[#262626] text-opacity-40 text-[24px] mb-[12px]">
+          <span className=" text-[#262626] text-opacity-40 text-[24px] mb-[12px]">
             Royalty Split
           </span>
           <div className="flex flex-row gap-[34px]">
