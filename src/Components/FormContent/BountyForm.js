@@ -106,7 +106,7 @@ const BountyForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-end">
           <button className="rounded-[6px] text-[#262626] text-[18px] w-[309px] h-[40px] bg-[#FEC7C7] border-0">
             Confirm
           </button>

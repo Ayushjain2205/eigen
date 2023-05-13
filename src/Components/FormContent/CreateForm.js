@@ -116,7 +116,7 @@ const CreateForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-end">
           <Link href="/bounty">
             <button className="rounded-[6px] text-[#262626] text-[18px] w-[309px] h-[40px] bg-[#D8FEE4] border-0">
               Done
