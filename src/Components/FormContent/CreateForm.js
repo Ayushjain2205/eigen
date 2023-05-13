@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import AvatarUpload from "../AvatarUpload";
+import AvatarUpload from "../Uploads/AvatarUpload";
 import Link from "next/link";
 
 const CreateForm = () => {

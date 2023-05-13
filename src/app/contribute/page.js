@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Layout from "@/Components/Layout";
-import FileUpload from "@/Components/FileUpload";
+import FileUpload from "@/Components/Uploads/FileUpload";
 import BoxHeader from "@/Components/UI/BoxHeader";
 
 const page = () => {
