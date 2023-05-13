@@ -5,6 +5,7 @@ import * as Tabs from "@radix-ui/react-tabs";
 import CollectionDetails from "./Tabs/CollectionDetails";
 import DAOperformance from "./Tabs/DAOperformance";
 import Members from "./Tabs/Members";
+import StorageBounties from "./Tabs/StorageBounties";
 
 const TabsHolder = () => (
   <Tabs.Root className="flex flex-col w-[1214px] mb-[50px]" defaultValue="tab1">
@@ -59,25 +60,7 @@ const TabsHolder = () => (
       className="grow p-5 bg-white border-l-2 border-r-2 border-b-2 border-t-2 border-black rounded-b-md outline-none focus:shadow-black"
       value="tab4"
     >
-      <h1>Storage Bounties</h1>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
-      <p className="mb-5 text-mauve11 text-[15px] leading-normal">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-        laboriosam eos dolore nemo ullam, tempore dolorem quaerat repudiandae,
-        maiores ipsa vero natus laborum totam! Doloribus odio minus debitis
-        quibusdam ut.
-      </p>
+      <StorageBounties />
     </Tabs.Content>
   </Tabs.Root>
 );
