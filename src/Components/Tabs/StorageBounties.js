@@ -9,7 +9,7 @@ const StorageBounties = () => {
         <span className="text-[24px]">
           Claim contributions to win storage bounties
         </span>
-        <span className="text-[24px] font-bold">1 contribution : 0.5 FIL</span>
+        <span className="text-[24px] font-bold">1 contribution : 0.5 BNB</span>
       </div>
       <div className="grid grid-cols-3 gap-[42px] ">
         {data.map((item, index) => (
