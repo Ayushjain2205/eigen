@@ -20,8 +20,8 @@ const page = () => {
                 placeholder=""
                 className="input input-bordered w-[913px] h-[60px] focus:outline-none"
               />
-              <button className="rounded-[6px] text-[#262626] text-[18px] w-[223px] h-[60px] bg-[#FEC7C7] border-0">
-                Done
+              <button className="rounded-[6px] text-[#262626] text-[18px] w-[223px] h-[60px] bg-[#FEC7C7] border-[1px] border-black">
+                Generate
               </button>
             </div>
           </div>
