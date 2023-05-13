@@ -39,7 +39,6 @@ const page = () => {
               Do you want to use this model?
             </span>
             <button
-              // onClick={() => sendTransaction()}
               onClick={() => {
                 sendTransaction();
                 const timer = setTimeout(() => {

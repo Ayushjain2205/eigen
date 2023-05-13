@@ -1,12 +1,26 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 import { InputNumber } from "antd";
 import BountyUpload from "../Uploads/BountyUpload";
+import { useSignMessage } from "wagmi";
+import { verifyMessage } from "ethers/lib/utils";
 
 const BountyForm = () => {
   const onChange = (value) => {
     console.log("changed", value);
   };
+
+  const router = useRouter();
+
+  const { data, error, isLoading, signMessage } = useSignMessage({
+    onSuccess(data, variables) {
+      // Verify signature when sign message succeeds
+      const address = verifyMessage(variables.message, data);
+      recoveredAddress.current = address;
+    },
+  });
+
   return (
     <div className="">
       <div className="flex flex-col gap-[80px]">
@@ -107,7 +121,16 @@ const BountyForm = () => {
         </div>
 
         <div className="flex flex-row justify-end">
-          <button className="rounded-[6px] text-[#262626] text-[18px] w-[309px] h-[40px] bg-[#FEC7C7] border-0">
+          <button
+            onClick={() => {
+              signMessage({ message: "Creating VB's DAO" });
+              const timer = setTimeout(() => {
+                router.push("/dashboard");
+              }, 5000);
+              return () => clearTimeout(timer);
+            }}
+            className="rounded-[6px] text-[#262626] text-[18px] w-[309px] h-[40px] bg-[#FEC7C7] border-0"
+          >
             Confirm
           </button>
         </div>
