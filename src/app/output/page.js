@@ -7,6 +7,7 @@ const page = () => {
   const [show, setShow] = useState(false);
 
   const generate = () => {
+    setShow(false);
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
