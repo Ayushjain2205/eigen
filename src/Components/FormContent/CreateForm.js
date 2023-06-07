@@ -2,6 +2,7 @@
 import React from "react";
 import AvatarUpload from "../Uploads/AvatarUpload";
 import Link from "next/link";
+import { InputNumber } from "antd";
 
 const CreateForm = () => {
   return (
@@ -78,9 +79,11 @@ const CreateForm = () => {
                 </span>
                 <label className="input-group">
                   <span>%</span>
-                  <input
-                    type="text"
-                    className="input input-bordered w-[310px] h-[40px]"
+                  <InputNumber
+                    min={0}
+                    max={10}
+                    defaultValue={10}
+                    className="input input-bordered w-[310px] h-[40px] flex items-center hover:border-[#262626] hover:border-opacity-40 overflow-hidden"
                   />
                 </label>
               </div>
@@ -92,9 +95,11 @@ const CreateForm = () => {
                 </span>
                 <label className="input-group">
                   <span>%</span>
-                  <input
-                    type="text"
-                    className="input input-bordered w-[310px] h-[40px]"
+                  <InputNumber
+                    min={0}
+                    max={10}
+                    defaultValue={5}
+                    className="input input-bordered w-[310px] h-[40px] flex items-center hover:border-[#262626] hover:border-opacity-40 overflow-hidden"
                   />
                 </label>
               </div>
@@ -106,9 +111,11 @@ const CreateForm = () => {
                 </span>
                 <label className="input-group">
                   <span>%</span>
-                  <input
-                    type="text"
-                    className="input input-bordered w-[310px] h-[40px]"
+                  <InputNumber
+                    min={0}
+                    max={10}
+                    defaultValue={5}
+                    className="input input-bordered w-[310px] h-[40px] flex items-center hover:border-[#262626] hover:border-opacity-40 overflow-hidden"
                   />
                 </label>
               </div>
