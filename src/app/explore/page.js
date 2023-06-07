@@ -47,7 +47,7 @@ const page = () => {
               <a href="#slide2" className="btn btn-circle">
                 ❮
               </a>
-              <a href="#slide4" className="btn btn-circle">
+              <a href="#slide1" className="btn btn-circle">
                 ❯
               </a>
             </div>
