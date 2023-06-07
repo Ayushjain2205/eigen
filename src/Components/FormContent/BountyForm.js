@@ -35,8 +35,8 @@ const BountyForm = () => {
                 </span>
                 <InputNumber
                   min={1}
-                  max={10}
-                  defaultValue={3}
+                  max={10000}
+                  defaultValue={100}
                   onChange={onChange}
                   className="input input-bordered w-[614px] h-[40px] flex items-center hover:border-[#262626] hover:border-opacity-40"
                 />
@@ -66,9 +66,11 @@ const BountyForm = () => {
                 </span>
                 <label className="input-group">
                   <span>%</span>
-                  <input
-                    type="text"
-                    className="input input-bordered w-[310px] h-[40px]"
+                  <InputNumber
+                    min={0}
+                    max={10}
+                    defaultValue={5}
+                    className="input input-bordered w-[310px] h-[40px] flex items-center hover:border-[#262626] hover:border-opacity-40 overflow-hidden"
                   />
                 </label>
               </div>
@@ -83,9 +85,11 @@ const BountyForm = () => {
                 </span>
                 <label className="input-group">
                   <span>%</span>
-                  <input
-                    type="text"
-                    className="input input-bordered w-[310px] h-[40px]"
+                  <InputNumber
+                    min={0}
+                    max={10}
+                    defaultValue={5}
+                    className="input input-bordered w-[310px] h-[40px] flex items-center hover:border-[#262626] hover:border-opacity-40 overflow-hidden"
                   />
                 </label>
               </div>
@@ -100,9 +104,11 @@ const BountyForm = () => {
                 </span>
                 <label className="input-group">
                   <span>%</span>
-                  <input
-                    type="text"
-                    className="input input-bordered w-[310px] h-[40px]"
+                  <InputNumber
+                    min={0}
+                    max={10}
+                    defaultValue={5}
+                    className="input input-bordered w-[310px] h-[40px] flex items-center hover:border-[#262626] hover:border-opacity-40 overflow-hidden"
                   />
                 </label>
               </div>
