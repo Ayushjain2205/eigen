@@ -13,13 +13,13 @@ const BountyForm = () => {
 
   const router = useRouter();
 
-  const { data, error, isLoading, signMessage } = useSignMessage({
-    onSuccess(data, variables) {
-      // Verify signature when sign message succeeds
-      const address = verifyMessage(variables.message, data);
-      recoveredAddress.current = address;
-    },
-  });
+  // const { data, error, isLoading, signMessage } = useSignMessage({
+  //   onSuccess(data, variables) {
+  //     // Verify signature when sign message succeeds
+  //     const address = verifyMessage(variables.message, data);
+  //     recoveredAddress.current = address;
+  //   },
+  // });
 
   return (
     <div className="">
@@ -122,13 +122,13 @@ const BountyForm = () => {
 
         <div className="flex flex-row justify-end">
           <button
-            onClick={() => {
-              signMessage({ message: "Creating VB's DAO" });
-              const timer = setTimeout(() => {
-                router.push("/dashboard");
-              }, 5000);
-              return () => clearTimeout(timer);
-            }}
+            // onClick={() => {
+            //   signMessage({ message: "Creating VB's DAO" });
+            //   const timer = setTimeout(() => {
+            //     router.push("/dashboard");
+            //   }, 5000);
+            //   return () => clearTimeout(timer);
+            // }}
             className="rounded-[6px] text-[#262626] text-[18px] w-[309px] h-[40px] bg-[#FEC7C7] border-0"
           >
             Confirm

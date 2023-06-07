@@ -2,17 +2,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import { useAccount, useConnect, useEnsName } from "wagmi";
-import { MetaMaskConnector } from "wagmi/connectors/metaMask";
+import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 
 const Navbar = () => {
-  const { address, isConnected } = useAccount();
-  const { connect } = useConnect({
-    connector: new MetaMaskConnector(),
-  });
-
   const [active, setActive] = useState("");
   const pathname = usePathname();
+
+  const address = useAddress();
 
   useEffect(() => {
     setActive(pathname);
@@ -57,18 +53,16 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-end">
-        <img
-          src="/address.svg"
-          className="rounded-full border-black border-[1px] mx-[10px]"
-          alt=""
-        />
-        <span className="text-[16px]">
-          {isConnected ? (
-            address.slice(0, 6) + "..." + address.slice(-4)
-          ) : (
-            <button onClick={() => connect()}>Connect Wallet</button>
-          )}
-        </span>
+        {!address ? (
+          <></>
+        ) : (
+          <img
+            src="/address.svg"
+            className="rounded-full border-black border-[1px] mx-[10px]"
+            alt=""
+          />
+        )}
+        <ConnectWallet theme="light" />
       </div>
     </div>
   );

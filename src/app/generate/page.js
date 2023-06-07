@@ -9,10 +9,10 @@ import { useRouter } from "next/navigation";
 const page = () => {
   const router = useRouter();
 
-  const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
-    to: "moxey.eth",
-    value: utils.parseEther("0.03"),
-  });
+  // const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
+  //   to: "moxey.eth",
+  //   value: utils.parseEther("0.03"),
+  // });
 
   return (
     <Layout>
@@ -39,13 +39,13 @@ const page = () => {
               Do you want to use this model?
             </span>
             <button
-              onClick={() => {
-                sendTransaction();
-                const timer = setTimeout(() => {
-                  router.push("/output");
-                }, 5000);
-                return () => clearTimeout(timer);
-              }}
+              // onClick={() => {
+              //   sendTransaction();
+              //   const timer = setTimeout(() => {
+              //     router.push("/output");
+              //   }, 5000);
+              //   return () => clearTimeout(timer);
+              // }}
               className="rounded-[6px] text-[#262626] text-[16px] w-[390px] h-[40px] bg-[#D8FEE4] border-0"
             >
               Confirm and pay (0.3 BNB)
