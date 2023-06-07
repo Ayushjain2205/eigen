@@ -13,7 +13,7 @@ const page = () => {
           ownership.
         </div>
         <div className="flex items-center text-[96px] h-[166px] w-[1000px] bg-[#FFDD67] border-black border-[3px] rounded-[40px] pl-[32px]">
-          collaboration
+          collaboration.
         </div>
         <div className="flex flex-row justify-between items-center w-[1190px] mt-[40px]">
           <div className="flex flex-row items-center gap-[10px]">
