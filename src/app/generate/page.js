@@ -26,6 +26,12 @@ const page = () => {
     value: utils.parseEther("0.03"),
   });
 
+  useEffect(() => {
+    if (!isConnected) {
+      connect();
+    }
+  }, [isConnected]);
+
   return (
     <Layout>
       <div className="flex flex-col items-center mt-[40px] gap-[40px] justify-center mb-[60px]">
@@ -52,7 +58,6 @@ const page = () => {
             </span>
             <button
               onClick={() => {
-                connect();
                 sendTransaction();
                 const timer = setTimeout(() => {
                   router.push("/output");
