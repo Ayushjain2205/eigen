@@ -1,7 +1,14 @@
 "use client";
 import React from "react";
 import Layout from "@/Components/Layout";
-import { useSendTransaction, usePrepareSendTransaction } from "wagmi";
+import {
+  useSendTransaction,
+  usePrepareSendTransaction,
+  useAccount,
+  useConnect,
+  useEnsName,
+} from "wagmi";
+import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 import { verifyMessage } from "ethers/lib/utils";
 import { utils } from "ethers";
 import { useRouter } from "next/navigation";
@@ -9,10 +16,15 @@ import { useRouter } from "next/navigation";
 const page = () => {
   const router = useRouter();
 
-  // const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
-  //   to: "moxey.eth",
-  //   value: utils.parseEther("0.03"),
-  // });
+  const { address, isConnected } = useAccount();
+  const { connect } = useConnect({
+    connector: new MetaMaskConnector(),
+  });
+
+  const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
+    to: "moxey.eth",
+    value: utils.parseEther("0.03"),
+  });
 
   return (
     <Layout>
@@ -39,16 +51,17 @@ const page = () => {
               Do you want to use this model?
             </span>
             <button
-              // onClick={() => {
-              //   sendTransaction();
-              //   const timer = setTimeout(() => {
-              //     router.push("/output");
-              //   }, 5000);
-              //   return () => clearTimeout(timer);
-              // }}
+              onClick={() => {
+                connect();
+                sendTransaction();
+                const timer = setTimeout(() => {
+                  router.push("/output");
+                }, 5000);
+                return () => clearTimeout(timer);
+              }}
               className="rounded-[6px] text-[#262626] text-[16px] w-[390px] h-[40px] bg-[#D8FEE4] border-0"
             >
-              Confirm and pay (0.3 BNB)
+              Confirm and pay $1
             </button>
           </div>
         </div>
