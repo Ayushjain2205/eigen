@@ -23,7 +23,7 @@ const page = () => {
 
   const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
     to: "moxey.eth",
-    value: utils.parseEther("0.03"),
+    value: utils.parseEther("0.0000003"),
   });
 
   useEffect(() => {
