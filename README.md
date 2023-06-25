@@ -14,10 +14,8 @@ The following technologies were used to develop Eigen:
 
 - Next.js for the frontend
 - Solidity for smart contract development
-- Chainlink VRF for democratically and fairly choosing moderators in the DataDAO
-- Chainlink automation for fine tuning the model when the number of data sources criteria is met.
-- Polygon blockchain for deploying smart contracts
+- Aurora testnet for deploying smart contracts
 
 # Video
 
-Check out our video to learn more about our platform: [Video](https://www.youtube.com/watch?v=rRiCJEl7VPU)
+Check out our video to learn more about our platform: [Video](https://youtu.be/M07SdATULPE)
